@@ -24,7 +24,7 @@ A full-stack, scalable real-time chat application built with the MERN stack + So
 - 📈 Redis adapter for horizontal scaling
 
 ---
-
+ 
 ## 🗂️ Project Structure
 
 ```

@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: pulse-chat-api
+    env: node
+    region: oregon
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: CLIENT_URL
+        sync: false
+
+
+
+
+
+|  # | Files                                          | Commit Message                                   |
+
+ 
+| 44 | `client/src/components/chat/ProfileModal.jsx`  | **Add profile modal**                            |
+| 45 | `client/src/components/chat/ChatInfoPanel.jsx` | **Display chat information panel**               |
+| 46 | `client/src/components/auth/`                  | **Create reusable authentication components**    |
+| 47 | `client/src/utils/dateUtils.js`                | **Add date formatting utilities**                |
+| 48 | Remaining integration changes                  | **Connect frontend with backend APIs**           |
+| 49 | UI improvements                                | **Improve responsive design and fix UI issues**  |
+| 50 | Final cleanup                                  | **Clean up codebase and prepare for deployment** |

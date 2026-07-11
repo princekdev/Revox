@@ -124,27 +124,28 @@ npm install
 
 ```env
 PORT=5000
-MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/chatapp
+
+MONGO_URI=your_mongodb_atlas_connection_string
+
 JWT_SECRET=your_super_secret_key_min_32_chars
 JWT_EXPIRES_IN=7d
 
-# Local Redis
-REDIS_URL=redis://localhost:6379
-# Or Upstash: rediss://username:password@host:port
+# Redis Cloud
+REDIS_URL=your_redis_cloud_connection_url
 
-CLOUDINARY_CLOUD_NAME=xxx
-CLOUDINARY_API_KEY=xxx
-CLOUDINARY_API_SECRET=xxx
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
-CLIENT_URL=http://localhost:5173
-NODE_ENV=development
+CLIENT_URL=https://revox-orcin.vercel.app
+NODE_ENV=production
 ```
 
 **Client** — copy `client/.env.example` → `client/.env`:
 
 ```env
-VITE_API_URL=http://localhost:5000/api
-VITE_SOCKET_URL=http://localhost:5000
+VITE_API_URL=https://revox-w4wm.onrender.com/api
+VITE_SOCKET_URL=https://revox-w4wm.onrender.com
 ```
 
 ### 3. Run
